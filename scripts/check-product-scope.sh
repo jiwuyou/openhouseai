@@ -32,6 +32,9 @@ require_file openhouseai-bootstrap/scripts/30-update-ubuntu-packages.sh
 require_file openhouseai-bootstrap/scripts/40-install-opencode.sh
 require_file openhouseai-bootstrap/scripts/42-install-codex.sh
 require_file openhouseai-bootstrap/scripts/44-install-claude-code.sh
+require_file openhouseai-app/README.md
+require_file openhouseai-app/app/src/main/java/com/termux/app/activities/MaintenanceCenterActivity.java
+require_file openhouseai-app/app/src/main/assets/openhouse/plugins/original/openhouse-manifest.json
 
 reject_path openhouseai-bootstrap/scripts/50-install-ai-agents-skill.sh
 reject_path openhouseai-bootstrap/scripts/55-install-required-components.sh
@@ -40,4 +43,3 @@ reject_path openhouseai-bootstrap/scripts/70-configure-entry.sh
 reject_path openhouseai-bootstrap/scripts/80-openhouse-web.sh
 
 exit "$missing"
-

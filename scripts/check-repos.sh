@@ -17,6 +17,6 @@ check_repo() {
 
 check_repo /root/projects/openhouseai
 check_repo /root/projects/openhouseai/openhouseai-bootstrap
+check_repo /root/projects/openhouseai/openhouseai-app
 
 exit "$missing"
-

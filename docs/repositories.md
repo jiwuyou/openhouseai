@@ -22,3 +22,12 @@ Current role:
 - Install base Ubuntu packages required by the agent CLIs.
 - Install OpenCode, Codex, and Claude Code.
 
+## `/root/projects/openhouseai/openhouseai-app`
+
+OpenHouseAI Android/Termux app fork.
+
+Current role:
+
+- Provide the APK entry point.
+- Expose maintenance actions for the OpenHouseAI installer scope.
+- Point dynamic maintenance defaults at `openhouseai-bootstrap`.

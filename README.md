@@ -16,6 +16,8 @@ sites, docs sites, or OpenHouse runtime components.
 
 - `openhouseai-bootstrap` - Termux/Ubuntu bootstrap installer for the three
   agent CLIs.
+- `openhouseai-app` - Android/Termux app fork with a narrowed maintenance
+  center for the same installer scope.
 
 ## Working Model
 
@@ -35,4 +37,3 @@ Bootstrap entry point:
 cd openhouseai-bootstrap
 bash bootstrap.sh full
 ```
-
