@@ -1,37 +1,32 @@
 # OpenHouseAI
 
-OpenHouseAI is a narrow installer product for local AI agent CLIs.
+OpenHouseAI 是一个范围收窄的本地 Agent CLI 安装产品。
 
-This workspace is separate from OpenHouse. It intentionally includes only the
-pieces needed to install and check:
-
+这个工作区独立于 OpenHouse，只保留安装和检测以下内容所需的仓库：
+- Ubuntu proot
 - OpenCode
-- Codex
+- Codex CLI
 - Claude Code
 
-It does not include SmallPhone, service-manager, cc-connect, cc-proxy, guide
-sites, docs sites, or OpenHouse runtime components.
+不在上述范围内的运行时服务、站点、组件和文档构建流程不属于 OpenHouseAI。
 
-## Repositories
+## 仓库
 
-- `openhouseai-bootstrap` - Termux/Ubuntu bootstrap installer for the three
-  agent CLIs.
-- `openhouseai-app` - Android/Termux app fork with a narrowed maintenance
-  center for the same installer scope.
+- `openhouseai-bootstrap`：Termux/Ubuntu bootstrap 安装脚本和在线维护清单。
+- `openhouseai-app`：收窄后的 Android/Termux app，维护中心只覆盖 OpenHouseAI 安装范围。
 
-## Working Model
+## 工作模型
 
-Keep implementation in child repositories under this workspace. Keep product
-scope, repository boundaries, and rollout notes here.
+实现放在子仓库中。这个根仓库只保留产品范围、仓库边界和检查脚本。
 
-## Commands
+## 检查命令
 
 ```bash
 ./scripts/check-repos.sh
 ./scripts/check-product-scope.sh
 ```
 
-Bootstrap entry point:
+Bootstrap 入口：
 
 ```bash
 cd openhouseai-bootstrap

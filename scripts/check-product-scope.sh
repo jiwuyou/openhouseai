@@ -28,7 +28,9 @@ require_file openhouseai-bootstrap/bootstrap.sh
 require_file openhouseai-bootstrap/scripts/00-check-termux.sh
 require_file openhouseai-bootstrap/scripts/10-prepare-termux.sh
 require_file openhouseai-bootstrap/scripts/20-install-ubuntu.sh
+require_file openhouseai-bootstrap/scripts/35-sync-docs.sh
 require_file openhouseai-bootstrap/scripts/30-update-ubuntu-packages.sh
+require_file openhouseai-bootstrap/scripts/70-configure-entry-ubuntu.sh
 require_file openhouseai-bootstrap/scripts/40-install-opencode.sh
 require_file openhouseai-bootstrap/scripts/42-install-codex.sh
 require_file openhouseai-bootstrap/scripts/44-install-claude-code.sh
